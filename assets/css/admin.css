@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.webot-wrap { padding-top: 20px; padding-right: 20px; font-size: 16px; font-family: "Montserrat", sans-serif; font-optical-sizing: auto; font-style: normal; }
+.webot-wrap * { box-sizing: border-box; }
+.webot-wrap img {  display: block; max-width: 100%; }
+.webot-wrap .heading { display: flex;  align-items: flex-end; gap: 10px; font-size: 1.5em; margin-bottom: 20px; }
+.webot-wrap .subtle { opacity: .5 }
+.webot-wrap .heading img { max-width: 150px; }
+.webot-wrap .heading .version { font-size: .6em; line-height: 1 }
+.webot-wrap label { display: block; margin-bottom: 5px; }
+.webot-wrap .input { margin-bottom: 20px; }
+.webot-wrap input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]):not(.wp-color-picker) { width: 100%; max-width: 600px; padding: 10px 15px;  }
+.webot-wrap input.short { max-width: 150px!important; }
+.webot-wrap input.shorter { max-width: 80px!important; }
+.webot-wrap section.split { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 40px; width: 100%; }
+.webot-wrap section.split .preview img { margin-top: -100px; width: 100%; max-width: 600px;  }
+.webot-wrap .button:not(.wp-picker-default) {  font-size: 18px; font-weight: 600; cursor: pointer; padding: 0px 20px; border-radius: 40px; }
+.webot-wrap .button.small, .webot-wrap .button.wp-color-result {  font-size: 14px!important; font-weight: 500!important;}
+.webot-wrap .button.wp-color-result {  background-color: #28a08c; border-color: transparent; color: white; }
+.webot-wrap .button.button-primary {  background: #28a08c; border-color: #28a08c; color: white  }
+.webot-wrap a { color: #28a08c; cursor: pointer;  }
+.webot-wrap .primary-text { color: #28a08c; }
+.webot-wrap .negative-text { color: #ee5245; }
+.webot-wrap .notice { margin: 0 0 20px; }
+.webot-wrap .leaderboard { max-width: 100%; margin-top: 40px; }
+.webot-domain-status-wrap { margin-bottom: 20px; font-size: 14px; }
+.webot-domain-status-wrap > div { margin-bottom: 5px; }
+#webot-check-domain-status { margin-top: 5px; }
+#webot-domain-status { text-transform: capitalize; }
+#webot-domain-error { color: #ee5245; }
+
+@media all and (max-width: 1200px){
+	.webot-wrap section.split { grid-template-columns: 1fr; grid-gap: 40px; }
+	.webot-wrap section.split .preview img { margin-top: unset; }
+}
+
+@media all and (max-width: 782px){
+	.webot-wrap { padding-right: 10px; }
+}
